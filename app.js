@@ -14,9 +14,7 @@ app.use(express.static(path.join(__dirname,"/public/")))
 app.set("views","./src/views");
 app.set("view engine","ejs")
 
-app.get("/",(req,res) => {
-   res.render('Hello World!');
-})
+
 
 // รับ port
 app.listen(port,() =>{
