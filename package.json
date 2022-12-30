@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Pheeraphat47/node_project/issues"
   },
-  "homepage": "https://github.com/Pheeraphat47/node_project#readme"
+  "homepage": "https://github.com/Pheeraphat47/node_project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
