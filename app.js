@@ -7,8 +7,12 @@ const morgan = require('morgan'); // เรียกใช้ morgan
 const path = require('path');
 
 
+
 app.use(morgan('combined'));
-app.use(express.static(path.join(__dirname,"/public")))
+app.use(express.static(path.join(__dirname,"./src/views")))
+
+app.set("views","./src/views");
+app.set("view engine","ejs")
 
 app.get("/",(req,res) => {
    res.send('Hello World!');
