@@ -7,9 +7,7 @@ const morgan = require('morgan'); // เรียกใช้ morgan
 
 
 
-app.get("/",(req,res) => {
-   res.send('Hello World!');
-})
+
 
 // รับ port
 app.listen(port,() =>{
