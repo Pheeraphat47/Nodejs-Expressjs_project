@@ -97,6 +97,9 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .navbar{
+        position: fixed;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
