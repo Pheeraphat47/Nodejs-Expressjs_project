@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set DEBUG=app & node app.js",
-    "debug": "set DEBUG=* & node app.js",
+    "start": "set DEBUG=app & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
