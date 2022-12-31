@@ -7,7 +7,7 @@ const morgan = require('morgan'); // เรียกใช้ morgan
 const path = require('path');
 const topstarsRouter = express.Router(); // สร้าง Router ของหน้า topstars
 const winnersRouter = express.Router(); // สร้าง Router ของหน้า winners
-const homeRouter = express.Router(); // สร้าง Router ของหน้า home
+
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")))
 
@@ -25,10 +25,7 @@ winnersRouter.route("/").get((req,res) =>{
     res.render('winners')
 })
 
-// route ไปหน้า home
-homeRouter.route("/").get((req,res) => {
-    res.render('index'); // ใส่ชื่อไฟล์ ซึ่งหน้า home ของเราชื่อ index 
-})
+
 
 //  สร้าง Topstars Router
 app.use("/topstars", topstarsRouter)
@@ -36,10 +33,10 @@ app.use("/topstars", topstarsRouter)
 // สร้าง winners Router
 app.use("/winners",winnersRouter)
 
-// สร้าง home Router
-app.use("/home",homeRouter)
 
 
+
+// setup หน้าแรกตอนเปิดเว็บ
 app.get("/", (req, res) => {
     res.render('index');
 })
