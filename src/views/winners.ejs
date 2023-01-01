@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winners - Nodejs_Expressjs-Project</title>
+    <title>Winners_Detail - Nodejs_Expressjs-Project</title>
 </head>
+
 <body>
 
     <%- include('nav_foot/nav') %>
-    
-    <h1>World Cup Winners</h1>
-    
+
+        <h1 class="winners-topic">World Cup Winners</h1>
+        <div class="winner-container">
+
+            <% winners.map((winner)=>{ %>
+                <div class="winners-box">
+                    <h2>
+                        <a class="winners-link" href="#">
+                            <%=winner.Year %>
+                        </a>
+                    </h2>
+                    <div class="winners-info">
+                        <h4>
+                            <span class="winners-info-topic">Host :</span> <%=winner.Country%>
+                        </h4>
+
+                        <h4>
+                            <span class="winners-info-topic">Winners :</span> <%=winner.Winner%>
+                        </h4>
+
+                        <h4>
+                            <span class="winners-info-topic">RunnersUp :</span> <%=winner.RunnersUp%>
+                        </h4>
+
+                        <h4>
+                            <span class="winners-info-topic">Third :</span> <%=winner.Third%>
+                        </h4>                        
+                    </div>
+                </div>
+                <%});%>
+
+
+
+        </div>
+
 </body>
+
 </html>
