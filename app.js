@@ -8,6 +8,9 @@ const path = require('path');
 const topstarsRouter = express.Router(); // สร้าง Router ของหน้า topstars
 const winnersRouter = express.Router(); // สร้าง Router ของหน้า winners
 const favicon = require('serve-favicon');
+// data
+// const winners = require('./data/winners.json');
+
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")))
@@ -23,7 +26,7 @@ topstarsRouter.route("/").get((req, res) => {
 
 // route ไปหน้า winners
 winnersRouter.route("/").get((req,res) =>{
-    res.render('winners')
+    res.render('winners');
 })
 
 
@@ -37,6 +40,8 @@ app.use("/winners",winnersRouter)
 
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
+
+app.use()
 
 // setup หน้าแรกตอนเปิดเว็บ
 app.get("/", (req, res) => {
