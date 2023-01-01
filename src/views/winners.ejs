@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winners_Detail - Nodejs_Expressjs-Project</title>
+    
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <% winners.map((winner)=>{ %>
                 <div class="winners-box">
                     <h2>
-                        <a class="winners-link" href="#">
+                        <a class="winners-link" href="/winners/<%=winner.id%>">
                             <%=winner.Year %>
                         </a>
                     </h2>

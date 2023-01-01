@@ -32,6 +32,14 @@ winnersRouter.route("/").get((req, res) => {
     );
 })
 
+winnersRouter.route("/:id").get((req,res) =>{
+    const id = req.params.id;
+    res.render('winner',{
+        winner: winners[id],
+    })
+
+})
+
 
 
 
