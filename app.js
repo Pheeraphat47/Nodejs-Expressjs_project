@@ -32,12 +32,7 @@ winnersRouter.route("/").get((req, res) => {
     );
 })
 
-winnersRouter.route("/:id").get((req, res) => {
-   const id = req.params.id;
-   res.render("winner",{
-      winner: winners[id],
-   })
-})
+
 
 
 
@@ -47,6 +42,12 @@ app.use("/topstars", topstarsRouter)
 
 // สร้าง winners Router
 app.use("/winners", winnersRouter)
+
+app.use('/static', express.static(path.join(__dirname, '/public/img/worldcuptrophy.png')))
+app.use('/topstars/pele', express.static(path.join(__dirname, '/public/img/pele.jpg')))
+app.use('/topstars/maradona', express.static(path.join(__dirname, '/public/img/maradona.jpg')))
+app.use('/topstars/messi', express.static(path.join(__dirname, '/public/img/messi.jpg')))
+
 
 
 
