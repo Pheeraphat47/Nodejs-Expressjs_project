@@ -25,8 +25,32 @@ topstarsRouter.route("/").get((req, res) => {
 });
 
 // route ไปหน้า winners
-winnersRouter.route("/").get((req,res) =>{
-    res.render('winners');
+winnersRouter.route("/").get((req, res) => {
+    res.render('winners', {
+        winners: [
+            {
+                "Year": 2014,
+                "Country": "Brazil",
+                "Winner": "Germany",
+                "Runners-Up": "Argentina",
+                "Third": "Netherlands"                
+            },
+            {
+                "Year": 2010,
+                "Country": "South Africa",
+                "Winner": "Spain",
+                "Runners-Up": "Netherlands",
+                "Third": "Germany"               
+            },
+            {
+                "Year": 2010,
+                "Country": "South Africa",
+                "Winner": "Spain",
+                "Runners-Up": "Netherlands",
+                "Third": "Germany"                
+            }
+        ]
+    });
 })
 
 
@@ -35,7 +59,7 @@ winnersRouter.route("/").get((req,res) =>{
 app.use("/topstars", topstarsRouter)
 
 // สร้าง winners Router
-app.use("/winners",winnersRouter)
+app.use("/winners", winnersRouter)
 
 
 
