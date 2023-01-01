@@ -51,7 +51,7 @@ app.use("/winners", winnersRouter)
 
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
-app.use('/static', express.static(path.join(__dirname, '/public/img/worldcuptrophy.png')))
+app.use('/worldcuptrophy', express.static(path.join(__dirname, '/public/img/worldcuptrophy.png')))
 app.use('/topstars/pele', express.static(path.join(__dirname, '/public/img/pele.jpg')))
 app.use('/topstars/maradona', express.static(path.join(__dirname, '/public/img/maradona.jpg')))
 app.use('/topstars/messi', express.static(path.join(__dirname, '/public/img/messi.jpg')))
