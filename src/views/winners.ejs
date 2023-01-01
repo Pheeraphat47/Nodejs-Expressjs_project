@@ -16,21 +16,17 @@
         <div class="winner-container">
             <% winners.map((winner)=>{ %>
                 <h2>
-                    <%=winner.Year %>
+                    <a href="/winners/<%=winner.id%>"></a><%=winner.Year %>
                 </h2>
                 <h4>
                     <%=winner.Country%>
                 </h4>
                 <h4>
                     <%=winner.Winner%>
-                </h4>
-                <h4>
-                    <%=winner.RunnersUp%>
-                </h4>
-                <h4>
-                    <%=winner.Third%>
-                </h4>
-            <%});%>
+                </h4>               
+                <%});%>
+
+                
         </div>
 
 </body>

@@ -9,7 +9,7 @@ const topstarsRouter = express.Router(); // สร้าง Router ของห�
 const winnersRouter = express.Router(); // สร้าง Router ของหน้า winners
 const favicon = require('serve-favicon');
 // data
-// const winners = require('./data/winners.json');
+const winners = require("./data/winners.json");
 
 
 app.use(morgan('combined'));
@@ -26,31 +26,9 @@ topstarsRouter.route("/").get((req, res) => {
 
 // route ไปหน้า winners
 winnersRouter.route("/").get((req, res) => {
-    res.render('winners', {
-        winners: [
-            {
-                Year: 2014,
-                Country: "Brazil",
-                Winner: "Germany",
-                RunnersUp: "Argentina",
-                Third: "Netherlands"                
-            },
-            {
-                Year: 2010,
-                Country: "South Africa",
-                Winner: "Spain",
-                RunnersUp: "Netherlands",
-                Third: "Germany"               
-            },
-            {
-                Year: 2010,
-                Country: "South Africa",
-                Winner: "Spain",
-                RunnersUp: "Netherlands",
-                Third: "Germany"                
-            }
-        ]
-    });
+    res.render('winners', 
+       winners,
+    );
 })
 
 
