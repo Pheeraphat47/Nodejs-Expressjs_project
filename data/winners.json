@@ -1,0 +1,25 @@
+{
+    "winners": [
+        {
+            "Year": 2014,
+            "Country": "Brazil",
+            "Winner": "Germany",
+            "Runners-Up": "Argentina",
+            "Third": "Netherlands"
+        },
+        {
+            "Year": 2010,
+            "Country": "South Africa",
+            "Winner": "Spain",
+            "Runners-Up": "Netherlands",
+            "Third": "Germany"
+        },
+        {
+            "Year": 2006,
+            "Country": "Germany",
+            "Winner": "Italy",
+            "Runners-Up": "France",
+            "Third": "Germany"
+        }
+    ]
+}
