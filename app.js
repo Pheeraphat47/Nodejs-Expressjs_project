@@ -26,14 +26,17 @@ topstarsRouter.route("/").get((req, res) => {
 
 // route ไปหน้า winners
 winnersRouter.route("/").get((req, res) => {
-    res.render('winners', 
-       winners,
+    res.render('winners',{
+        winners,
+    }       
     );
 })
 
 winnersRouter.route("/:id").get((req, res) => {
    const id = req.params.id;
-   res.send("This is id = " + id);
+   res.render("winner",{
+      winner: winners[id],
+   })
 })
 
 

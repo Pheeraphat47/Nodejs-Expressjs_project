@@ -1,28 +1,26 @@
-{
-    "winners": [
-        {
-            "id" : 0,
-            "Year": 2014,
-            "Country": "Brazil",
-            "Winner": "Germany",
-            "RunnersUp": "Argentina",
-            "Third": "Netherlands"                
-        },
-        {
-            "id" : 1,
-            "Year": 2010,
-            "Country": "South Africa",
-            "Winner": "Spain",
-            "RunnersUp": "Netherlands",
-            "Third": "Germany"               
-        },
-        {
-            "id" : 2,
-            "Year": 2006,
-            "Country": "Germany",
-            "Winner": "Italy",
-            "Runners-Up": "France",
-            "Third": "Germany"            
-        }
-    ]
-}
+[
+    {
+        "id": 0,
+        "Year": 2014,
+        "Country": "Brazil",
+        "Winner": "Germany",
+        "RunnersUp": "Argentina",
+        "Third": "Netherlands"
+    },
+    {
+        "id": 1,
+        "Year": 2010,
+        "Country": "South Africa",
+        "Winner": "Spain",
+        "RunnersUp": "Netherlands",
+        "Third": "Germany"
+    },
+    {
+        "id": 2,
+        "Year": 2006,
+        "Country": "Germany",
+        "Winner": "Italy",
+        "RunnersUp": "France",
+        "Third": "Germany"
+    }
+]

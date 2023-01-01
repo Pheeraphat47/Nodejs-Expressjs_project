@@ -151,7 +151,8 @@ topstar-story{
 
 .winners-topic{
     text-align: center;
-    margin-top: 8%;    
+    margin-top: 8%;  
+    font-size: 2.5rem;  
 }
 .winners-link{
     color: green;
@@ -185,10 +186,14 @@ topstar-story{
     margin-top: 5%;
 }
 
+.winners-info-topic{
+    color: green;
+}
+
 
 @media  screen and (max-width:1024px) {
     .winners-box{
-        width: 200px;
+        width: 250px;
     }
 }
 
