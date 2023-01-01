@@ -149,8 +149,48 @@ topstar-story{
     box-shadow: 0 0 10px green;
 }
 
+.winners-topic{
+    text-align: center;
+    margin-top: 8%;    
+}
+.winners-link{
+    color: green;
+    text-decoration: underline;    
+}
+
+.winner-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.winners-box{       
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 2%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    margin: 0 auto;    
+    
+}
+
+.winners-box:hover{
+    border-color: green;
+    box-shadow: 0 0 10px green;
+}
+
+.winners-info{
+    margin-top: 5%;
+}
 
 
+@media  screen and (max-width:1024px) {
+    .winners-box{
+        width: 200px;
+    }
+}
 
 @media screen and (max-width:768px) {
     .hamburger_menu {
@@ -201,6 +241,15 @@ topstar-story{
     .topstar-content{
         width: 90%;
     }
+
+    .winner-container{        
+        flex-direction: column;        
+    }
+
+    .winners-box{
+        margin-top: 5%;
+        width: 300px;
+    }
 }
 
 
@@ -221,6 +270,12 @@ topstar-story{
     .topstar-content{
         width: 98%;
     }
+
+    .winners-box{
+        margin-top: 10%;
+    }
+
+   
 
 
 }

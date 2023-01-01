@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winners_Detail - Nodejs_Expressjs-Project</title>
+</head>
+
+<body>
+
+    <%- include('nav_foot/nav') %>
+
+        <h1>World Cup Winners Details</h1>
+        <div class="winner-container">
+            <% winners.map((winner)=>{ %>
+                <h2>
+                    <a class="winners-link" href="/winners/<%=winner.id%>"><%=winner.Year %></a>
+                </h2>
+                <h4>
+                    <%=winner.Country%>
+                </h4>
+                <h4>
+                    <%=winner.Winner%>
+                </h4>               
+                <%});%>
+
+                
+        </div>
+
+</body>
+
+</html>

@@ -31,6 +31,12 @@ winnersRouter.route("/").get((req, res) => {
     );
 })
 
+winnersRouter.route("/:id").get((req, res) => {
+   const id = req.params.id;
+   res.send("This is id = " + id);
+})
+
+
 
 
 //  สร้าง Topstars Router

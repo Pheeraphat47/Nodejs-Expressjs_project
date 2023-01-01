@@ -12,21 +12,27 @@
 
     <%- include('nav_foot/nav') %>
 
-        <h1>World Cup Winners</h1>
+        <h1 class="winners-topic">World Cup Winners</h1>
         <div class="winner-container">
             <% winners.map((winner)=>{ %>
-                <h2>
-                    <a href="/winners/<%=winner.id%>"></a><%=winner.Year %>
-                </h2>
-                <h4>
-                    <%=winner.Country%>
-                </h4>
-                <h4>
-                    <%=winner.Winner%>
-                </h4>               
+                <div class="winners-box">
+                    <h2>
+                        <a class="winners-link" href="/winners/<%=winner.id%>">
+                            <%=winner.Year %>
+                        </a>
+                    </h2>
+                    <div class="winners-info">
+                        <h4>
+                            Host : <%=winner.Country%>
+                        </h4>
+                        <h4>
+                            Winners : <%=winner.Winner%>
+                        </h4>
+                    </div>
+                </div>
                 <%});%>
 
-                
+
         </div>
 
 </body>
