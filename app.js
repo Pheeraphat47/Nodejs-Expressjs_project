@@ -41,7 +41,7 @@ app.use("/winners",winnersRouter)
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
-app.use()
+
 
 // setup หน้าแรกตอนเปิดเว็บ
 app.get("/", (req, res) => {
